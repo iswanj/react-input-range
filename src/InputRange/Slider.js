@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import Label from './Label';
+// import Label from './Label';
 import { autobind } from './util';
 
 /**
@@ -152,12 +152,12 @@ export default class Slider extends React.Component {
         className={ classNames.sliderContainer }
         ref="slider"
         style={ style }>
-        <Label
+        {/* <Label
           className={ classNames.labelValue }
           containerClassName={ classNames.labelContainer }
           formatLabel={ this.props.formatLabel }>
           { this.props.value }
-        </Label>
+        </Label> */}
 
         <a
           aria-labelledby={ this.props.ariaLabelledby }

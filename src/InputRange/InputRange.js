@@ -5,7 +5,7 @@
 import React from 'react';
 import Slider from './Slider';
 import Track from './Track';
-import Label from './Label';
+// import Label from './Label';
 import defaultClassNames from './defaultClassNames';
 import valueTransformer from './valueTransformer';
 import { autobind, captialize, distanceTo, isDefined, isObject, length } from './util';
@@ -563,12 +563,12 @@ export default class InputRange extends React.Component {
         onKeyUp={ this.handleKeyUp }
         onMouseDown={ this.handleMouseDown }
         onTouchStart={ this.handleTouchStart }>
-        <Label
+        {/* <Label
           className={ classNames.labelMin }
           containerClassName={ classNames.labelContainer }
           formatLabel={ this.formatLabel }>
           { this.props.minValue }
-        </Label>
+        </Label> */}
 
         <Track
           classNames={ classNames }
@@ -579,12 +579,12 @@ export default class InputRange extends React.Component {
           { renderSliders(this) }
         </Track>
 
-        <Label
+        {/* <Label
           className={ classNames.labelMax }
           containerClassName={ classNames.labelContainer }
           formatLabel={ this.formatLabel }>
           { this.props.maxValue }
-        </Label>
+        </Label> */}
 
         { renderHiddenInputs(this) }
       </div>
